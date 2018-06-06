@@ -16,7 +16,7 @@ allprojects {
     }
 }
 dependencies {
-    compile 'com.github.VRGsoftUA:ParallaxView:1.0'
+    implementation 'com.github.VRGsoftUA:ParallaxView:1.0'
 }
 ```
 2. Include ParallaxView class in your xml layout. For Example:
