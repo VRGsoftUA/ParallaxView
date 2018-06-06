@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:isNeedScale="true"
+            app:isInvertedVerticalParallax="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:parallaxScale="1.2">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/space" />
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/mercury"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/mercury"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/venus"
+            app:layout_constraintTop_toBottomOf="@id/mercury"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/venus"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/earth"
+            app:layout_constraintTop_toBottomOf="@id/venus"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/earth"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/mars"
+            app:layout_constraintTop_toBottomOf="@id/earth"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/mars"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/jupiter"
+            app:layout_constraintTop_toBottomOf="@id/mars"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/jupiter"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/saturn"
+            app:layout_constraintTop_toBottomOf="@id/jupiter"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/saturn"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/uranus"
+            app:layout_constraintTop_toBottomOf="@id/saturn"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/uranus"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+
+        <net.vrgsoft.parallaxview.ParallaxView
+            android:id="@+id/neptune"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintTop_toBottomOf="@id/uranus"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/neptune"/>
+        </net.vrgsoft.parallaxview.ParallaxView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

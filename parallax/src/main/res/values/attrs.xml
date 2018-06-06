@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParallaxView">
+        <attr name="isEnabledHorizontalParallax" format="boolean"/>
+        <attr name="isEnabledVerticalParallax" format="boolean"/>
+        <attr name="isInvertedHorizontalParallax" format="boolean"/>
+        <attr name="isInvertedVerticalParallax" format="boolean"/>
+        <attr name="isNeedScale" format="boolean"/>
+        <attr name="decelerateFactor" format="float"/>
+        <attr name="parallaxScale" format="float"/>
+    </declare-styleable>
+</resources>
